@@ -3,11 +3,11 @@ import React from 'react'
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
 
+
 const TodoList = ({ list, remove }) => {
     return (
       <>
- 
-
+         
         {list?.length > 0 ? (
           <ul>
             {list.map((entry, index) => (
@@ -17,8 +17,6 @@ const TodoList = ({ list, remove }) => {
                 <ListItemText key={index}> {entry} </ListItemText>
                 </ListItemButton>
                 
-
-        
          <Button variant="outlined"
             onClick={() => {
         remove(entry);
@@ -27,7 +25,7 @@ const TodoList = ({ list, remove }) => {
       </Button>
       </Stack>
                 
-              </div>
+          </div>
             ))}
           </ul>
         ) : (
@@ -35,6 +33,7 @@ const TodoList = ({ list, remove }) => {
             <p>No task found</p>
           </div>
         )}
+     
       </>
     );
   };

@@ -16,8 +16,8 @@ const Todo = () => {
             </AppBar>
         </Box>
 
-    
-    
+        <Typography variant="h4" color="inherit" component="div"> To Do
+         </Typography>  
     </div>
   )
 }
